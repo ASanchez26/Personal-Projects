@@ -9,6 +9,7 @@
 
 //Create a new menu option to run the UpdateArmory method directly from the spreadsheet
 function onOpen() {
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
   var menuEntries = [ {name: "Update", functionName: "UpdateArmory"} ];
   ss.addMenu("Commands", menuEntries);
 }
